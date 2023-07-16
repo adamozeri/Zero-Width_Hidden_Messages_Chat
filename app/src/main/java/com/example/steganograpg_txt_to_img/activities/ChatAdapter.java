@@ -128,6 +128,7 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 else{
                     String newMessage = "Fake Message: " +binding.receivedMessage.getText() + "\nHidden Message: " + decoded;
                     binding.receivedMessage.setText(newMessage);
+                    binding.receivedFabDecode.setVisibility(View.GONE);
                 }
             });
         }
@@ -136,6 +137,7 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             binding.receivedMessage.setText(chatMessage.getMessage());
             binding.receivedDateTime.setText(chatMessage.getDateTime());
             binding.receivedName.setText(chatMessage.getSenderName());
+            binding.receivedFabDecode.setVisibility(View.VISIBLE);
             if(!chatMessage.isEncoded())
                 binding.receivedFabDecode.setVisibility(View.GONE);
         }
