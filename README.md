@@ -33,4 +33,4 @@ SecureChat is a robust Android application that takes your privacy and security 
 
 ## Authors
 
-* **Adam Ozeri** - *Initial work* - [adamozeri](https://github.com/adamozeri)
+* **Adam Ozeri** - [adamozeri](https://github.com/adamozeri)
